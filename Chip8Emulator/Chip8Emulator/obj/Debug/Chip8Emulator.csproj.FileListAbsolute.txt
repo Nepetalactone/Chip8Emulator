@@ -1,0 +1,1 @@
+I:\Documents\Chip8Emulator\Chip8Emulator\Chip8Emulator\bin\Debug\Chip8Emulator.exe.config
