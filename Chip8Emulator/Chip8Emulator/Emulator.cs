@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Timers;
+using System.IO;
 
 namespace Chip8Emulator
 {
@@ -37,7 +38,58 @@ namespace Chip8Emulator
 
         public void loadGame(string path)
         {
-            throw new NotImplementedException();
+
+            byte[] loadedProgramBytes = null;
+            try
+            {
+                loadedProgramBytes = File.ReadAllBytes(path);
+            }
+            catch (Exception Ex)
+            {
+                Console.WriteLine(Ex.ToString());
+            }
+
+            /*using (FileStream fs = File.OpenRead(path))
+            {
+                Console.WriteLine(fs.Length);
+                byte[] buffer = new byte[246];
+                UTF8Encoding enc = new UTF8Encoding();
+                fs.Read(buffer, 0, buffer.Length); */
+
+                int i = 0;
+                while (i < loadedProgramBytes.Length)
+                {
+                    byte first = loadedProgramBytes[i];
+                    byte second = loadedProgramBytes[++i];
+                    ushort opcode = (ushort)((first) << 8 | (second));
+                    //int sopcode = opcode & 0xF000;
+
+                    Console.WriteLine(opcode.ToString("X2"));
+
+                    i++;
+
+                }
+            //}
+        }
+
+        public void startGame()
+        {
+            while(true)
+            {
+
+            }
+        }
+
+        public void emulateCycle()
+        {
+        }
+
+        public void drawFlag()
+        {
+        }
+
+        public void setKeys()
+        {
         }
     }
 }

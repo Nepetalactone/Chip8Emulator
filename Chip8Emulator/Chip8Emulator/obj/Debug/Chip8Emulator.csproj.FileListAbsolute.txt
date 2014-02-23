@@ -1,1 +1,6 @@
 I:\Documents\Chip8Emulator\Chip8Emulator\Chip8Emulator\bin\Debug\Chip8Emulator.exe.config
+I:\Documents\Chip8Emulator\Chip8Emulator\Chip8Emulator\bin\Debug\Chip8Emulator.exe
+I:\Documents\Chip8Emulator\Chip8Emulator\Chip8Emulator\bin\Debug\Chip8Emulator.pdb
+I:\Documents\Chip8Emulator\Chip8Emulator\Chip8Emulator\obj\Debug\Chip8Emulator.csprojResolveAssemblyReference.cache
+I:\Documents\Chip8Emulator\Chip8Emulator\Chip8Emulator\obj\Debug\Chip8Emulator.exe
+I:\Documents\Chip8Emulator\Chip8Emulator\Chip8Emulator\obj\Debug\Chip8Emulator.pdb

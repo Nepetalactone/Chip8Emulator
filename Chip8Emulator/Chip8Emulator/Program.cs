@@ -10,6 +10,9 @@ namespace Chip8Emulator
     {
         static void Main(string[] args)
         {
+            Emulator emu = new Emulator();
+            emu.loadGame(@"I:\Documents\Chip8Emulator\Chip8Emulator\Chip8Emulator\ROM\PONG");
+            Console.ReadKey();
         }
     }
 }
